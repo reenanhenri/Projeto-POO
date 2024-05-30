@@ -6,7 +6,7 @@ public class AlunoCRUD {
     private List<Aluno> alunos = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
-    // Método para criar um novo aluno
+    
     public void createAluno() {
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
@@ -18,7 +18,7 @@ public class AlunoCRUD {
         System.out.println("Aluno criado com sucesso!");
     }
 
-    // Método para listar todos os alunos
+    
     public void readAlunos() {
         System.out.println("Lista de alunos:");
         alunos.forEach(aluno -> aluno.exibirDetalhes());
